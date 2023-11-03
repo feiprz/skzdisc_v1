@@ -1,0 +1,963 @@
+{
+  "albums": {
+    "albums": [
+      {
+        "id": "ALB221007",
+        "title": "MAXIDENT",
+        "date": "2022-10-07T00:00:00.000Z",
+        "desc": "Mini Album",
+        "tracklist": [
+          {
+            "num": "01",
+            "title": "CASE 143",
+            "titleTrack": true
+          },
+          {
+            "num": "02",
+            "title": "CHILL"
+          },
+          {
+            "num": "03",
+            "title": "Give Me Your TMI"
+          },
+          {
+            "num": "04",
+            "title": "SUPER BOARD"
+          },
+          {
+            "num": "05",
+            "title": "3RACHA"
+          },
+          {
+            "num": "06",
+            "title": "TASTE"
+          },
+          {
+            "num": "07",
+            "title": "Can't Stop"
+          },
+          {
+            "num": "08",
+            "title": "CIRCUS (Korean Ver.)"
+          }
+        ],
+        "img": "maxident.jpeg",
+        "spotify": "6eopBT5mGEZVNC7jIgm0lp"
+      },
+      {
+        "id": "ALB220318",
+        "title": "ODDINARY",
+        "date": "2022-03-18T00:00:00.000Z",
+        "desc": "Mini Album",
+        "tracklist": [
+          {
+            "num": "01",
+            "title": "VENOM"
+          },
+          {
+            "num": "02",
+            "title": "MANIAC",
+            "titleTrack": true
+          },
+          {
+            "num": "03",
+            "title": "Charmer"
+          },
+          {
+            "num": "04",
+            "title": "FREEZE"
+          },
+          {
+            "num": "05",
+            "title": "Lonely St."
+          },
+          {
+            "num": "06",
+            "title": "Waiting For Us"
+          },
+          {
+            "num": "07",
+            "title": "Muddy Water"
+          }
+        ],
+        "img": "oddinary.jpeg",
+        "spotify": "0Gmf4pfe0POEQq2FgGAj2q"
+      },
+      {
+        "id": "ALB220801",
+        "title": "Mixtape : Time Out",
+        "date": "2022-08-01T00:00:00.000Z",
+        "desc": "Mixtape",
+        "tracklist": [
+          {
+            "num": "01",
+            "title": "Mixtape : Time Out",
+            "titleTrack": true
+          }
+        ],
+        "img": "mixtape-timeout.jpeg",
+        "spotify": "6Sr3My17NKn1g1zIFclPoS"
+      },
+      {
+        "id": "ALB230602",
+        "title": "5-STAR",
+        "date": "2023-06-02T00:00:00.000Z",
+        "desc": "The 3rd Album",
+        "tracklist": [
+          {
+            "num": "01",
+            "title": "Hall of Fame"
+          },
+          {
+            "num": "02",
+            "title": "S-Class",
+            "titleTrack": true
+          },
+          {
+            "num": "03",
+            "title": "ITEM"
+          },
+          {
+            "num": "04",
+            "title": "Super Bowl"
+          },
+          {
+            "num": "05",
+            "title": "TOPLINE (Feat. Tiger JK)"
+          },
+          {
+            "num": "06",
+            "title": "DLC"
+          },
+          {
+            "num": "07",
+            "title": "GET LIT"
+          },
+          {
+            "num": "08",
+            "title": "Collision"
+          },
+          {
+            "num": "09",
+            "title": "FNF"
+          },
+          {
+            "num": "10",
+            "title": "Youtiful"
+          },
+          {
+            "num": "11",
+            "title": "THE SOUND (Korean Ver.)"
+          },
+          {
+            "num": "12",
+            "title": "Mixtape : Time Out"
+          }
+        ],
+        "img": "5-star.jpeg",
+        "spotify": "3Pel3gWsPxVpZVrciU0Fm6"
+      }
+    ]
+  },
+  "songs": {
+    "songs": [
+      {
+        "id": "TR220318-01",
+        "title": "VENOM",
+        "otherTitle": "거미줄",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "DallasK"
+        ],
+        "arrange": [
+          "DallasK",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "pM-jOfy_1jM"
+      },
+      {
+        "id": "TR220318-02",
+        "title": "MANIAC",
+        "titleTrack": true,
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "VERSACHOI"
+        ],
+        "arrange": [
+          "VERSACHOI",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "OvioeS1ZZ7o"
+      },
+      {
+        "id": "TR220318-03",
+        "title": "Charmer",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "VERSACHOI"
+        ],
+        "arrange": [
+          "VERSACHOI"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "BCZE-44jp_I"
+      },
+      {
+        "id": "TR220318-04",
+        "title": "FREEZE",
+        "otherTitle": "땡",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Trippy"
+        ],
+        "arrange": [
+          "Trippy",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "etjQd0wgUTo"
+      },
+      {
+        "id": "TR220318-05",
+        "title": "Lonely St.",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "JUN2"
+        ],
+        "arrange": [
+          "JUN2",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "jxwFUMvd-fY"
+      },
+      {
+        "id": "TR220318-06",
+        "title": "Waiting For Us",
+        "otherTitle": "피어난다",
+        "singer": "Bang Chan, Lee Know, Seungmin, I.N",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Lee Know",
+          "Seungmin",
+          "I.N"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Lee Know",
+          "Seungmin",
+          "I.N",
+          "Nickko Young"
+        ],
+        "arrange": [
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "yQ0i2KmtL0g"
+      },
+      {
+        "id": "TR220318-07",
+        "title": "Muddy Water",
+        "singer": "Changbin, Hyunjin, HAN, Felix",
+        "lyrics": [
+          "Changbin (3RACHA)",
+          "Hyunjin",
+          "HAN (3RACHA)",
+          "Felix"
+        ],
+        "compose": [
+          "Changbin (3RACHA)",
+          "Hyunjin",
+          "HAN (3RACHA)",
+          "Felix",
+          "Millionboy"
+        ],
+        "arrange": [
+          "Millionboy",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "ODDINARY"
+        ],
+        "video": "WVPd9dZqo8Y"
+      },
+      {
+        "id": "TR220801-01",
+        "title": "Mixtape : Time Out",
+        "titleTrack": true,
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "VERSACHOI",
+          "JUN2"
+        ],
+        "arrange": [
+          "VERSACHOI",
+          "Bang Chan (3RACHA)",
+          "JUN2"
+        ],
+        "album": [
+          "Mixtape : Time Out",
+          "5-STAR"
+        ],
+        "video": "ukIGxgdbqqI"
+      },
+      {
+        "id": "TR230602-01",
+        "title": "Hall of Fame",
+        "otherTitle": "위인전",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "VERSACHOI"
+        ],
+        "arrange": [
+          "VERSACHOI"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "XRx2vo9UeWg"
+      },
+      {
+        "id": "TR230602-02",
+        "title": "S-Class",
+        "otherTitle": "특",
+        "titleTrack": true,
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Chae Ganghae",
+          "RESTART"
+        ],
+        "arrange": [
+          "Chae Ganghae",
+          "RESTART",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "JsOOis4bBFg"
+      },
+      {
+        "id": "TR230602-03",
+        "title": "ITEM",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "VERSACHOI"
+        ],
+        "arrange": [
+          "VERSACHOI",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "Zme_-F_h63M"
+      },
+      {
+        "id": "TR230602-04",
+        "title": "Super Bowl",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Felix"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Zach Djurich"
+        ],
+        "arrange": [
+          "Zach Djurich",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "kyc-6bMMpco"
+      },
+      {
+        "id": "TR230602-05",
+        "title": "TOPLINE (Feat. Tiger JK)",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Tiger JK"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "VERSACHOI"
+        ],
+        "arrange": [
+          "VERSACHOI"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "b3GYcA7j5mg"
+      },
+      {
+        "id": "TR230602-06",
+        "title": "DLC",
+        "lyrics": [
+          "Changbin (3RACHA)",
+          "RESTART"
+        ],
+        "compose": [
+          "Changbin (3RACHA)",
+          "RESTART"
+        ],
+        "arrange": [
+          "RESTART",
+          "Changbin (3RACHA)"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "9gqOgQ6Ci4M"
+      },
+      {
+        "id": "TR230602-07",
+        "title": "GET LIT",
+        "otherTitle": "죽어보자",
+        "lyrics": [
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "HAN (3RACHA)",
+          "Chae Ganghae",
+          "RESTART"
+        ],
+        "arrange": [
+          "Chae Ganghae",
+          "RESTART"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "T8WVJWiJduM"
+      },
+      {
+        "id": "TR230602-08",
+        "title": "Collision",
+        "otherTitle": "충돌",
+        "lyrics": [
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "HAN (3RACHA)",
+          "Millionboy"
+        ],
+        "arrange": [
+          "Millionboy"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "aNr01u0cBUc"
+      },
+      {
+        "id": "TR230602-09",
+        "title": "FNF",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Felix"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Felix",
+          "Trippy"
+        ],
+        "arrange": [
+          "Trippy",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "RrFn_KJn7Rk"
+      },
+      {
+        "id": "TR230602-10",
+        "title": "Youtiful",
+        "lyrics": [
+          "Bang Chan (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Nickko Young"
+        ],
+        "arrange": [
+          "Nickko Young"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "RrFn_KJn7Rk"
+      },
+      {
+        "id": "TR230602-11",
+        "title": "THE SOUND (Korean Ver.)",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Zach Djurich",
+          "Kyle Reynolds",
+          "Chris LaRocca"
+        ],
+        "arrange": [
+          "Zach Djurich",
+          "Kyle Reynolds",
+          "Bang Chan (3RACHA)",
+          "Chris LaRocca"
+        ],
+        "album": [
+          "5-STAR"
+        ],
+        "video": "3tGdvv3gdq8"
+      },
+      {
+        "id": "TR221007-01",
+        "title": "CASE 143",
+        "titleTrack": true,
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Raphael (Producing Lab.)",
+          "Daviid (3SCAPE)",
+          "Nickko Young",
+          "Yosia (3SCAPE)"
+        ],
+        "arrange": [
+          "Raphael (Producing Lab.)",
+          "Daviid (3SCAPE)",
+          "Yosia (3SCAPE)",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "jYSlpC6Ud2A"
+      },
+      {
+        "id": "TR221007-02",
+        "title": "CHILL",
+        "otherTitle": "식혀",
+        "lyrics": [
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "HAN (3RACHA)",
+          "Bang Chan (3RACHA)"
+        ],
+        "arrange": [
+          "VERSACHOI",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "dtV1I9WtQuo"
+      },
+      {
+        "id": "TR221007-03",
+        "title": "Give Me Your TMI",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "TAK (NEWTYPE)",
+          "1Take (NEWTYPE)"
+        ],
+        "arrange": [
+          "TAK (NEWTYPE)",
+          "1Take (NEWTYPE)"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "YwgC2Q9gS7w"
+      },
+      {
+        "id": "TR221007-04",
+        "title": "SUPER BOARD",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "Kimparkchella"
+        ],
+        "arrange": [
+          "Kimparkchella",
+          "Bang Chan (3RACHA)"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "8ziUcTYwARI"
+      },
+      {
+        "id": "TR221007-05",
+        "title": "3RACHA",
+        "singer": "Bang Chan, Changbin, HAN",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "arrange": [
+          "Bang Chan (3RACHA)",
+          "VERSACHOI"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "sZtkXn_-Kws"
+      },
+      {
+        "id": "TR221007-06",
+        "title": "TASTE",
+        "singer": "Lee Know, Hyunjin, Felix",
+        "lyrics": [
+          "Hyunjin",
+          "Felix",
+          "Lee Know"
+        ],
+        "compose": [
+          "Hyunjin",
+          "Felix",
+          "Lee Know",
+          "Bang Chan (3RACHA)"
+        ],
+        "arrange": [
+          "Bang Chan (3RACHA)",
+          "VERSACHOI"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "Ihw3CqKMTog"
+      },
+      {
+        "id": "TR221007-07",
+        "title": "Can't Stop",
+        "otherTitle": "나 너 좋아하나봐",
+        "singer": "Seungmin, I.N",
+        "lyrics": [
+          "Seungmin",
+          "I.N",
+          "Hong Ji Sang"
+        ],
+        "compose": [
+          "Seungmin",
+          "I.N",
+          "Hong Ji Sang"
+        ],
+        "arrange": [
+          "Hong Ji Sang"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "iI2v-CXKXU4"
+      },
+      {
+        "id": "TR221007-08",
+        "title": "CIRCUS (Korean Ver.)",
+        "lyrics": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)"
+        ],
+        "compose": [
+          "Bang Chan (3RACHA)",
+          "Changbin (3RACHA)",
+          "HAN (3RACHA)",
+          "earattack",
+          "chAN's",
+          "DARM"
+        ],
+        "arrange": [
+          "Bang Chan (3RACHA)",
+          "earattack",
+          "chAN's",
+          "DARM"
+        ],
+        "album": [
+          "MAXIDENT"
+        ],
+        "video": "jiQFAC3FWg0"
+      }
+    ]
+  },
+  "credits": {
+    "credits": [
+      {
+        "id": "001",
+        "name": "Bang Chan (3RACHA)",
+        "instagram": "gnabnahc",
+        "desc": "Leader, 3RACHA",
+        "bday": "1997-10-03T00:00:00.000Z",
+        "img": "bang_chan",
+        "skz": true
+      },
+      {
+        "id": "002",
+        "name": "Lee Know",
+        "instagram": "realstraykids",
+        "desc": "DANCERACHA",
+        "bday": "1998-10-25T00:00:00.000Z",
+        "img": "lee_know",
+        "skz": true
+      },
+      {
+        "id": "003",
+        "name": "Changbin (3RACHA)",
+        "instagram": "jutdwae",
+        "desc": "3RACHA",
+        "bday": "1999-08-11T00:00:00.000Z",
+        "img": "changbin",
+        "skz": true
+      },
+      {
+        "id": "004",
+        "name": "Hyunjin",
+        "instagram": "hynjinnnn",
+        "desc": "DANCERACHA",
+        "bday": "2000-03-20T00:00:00.000Z",
+        "img": "hyunjin",
+        "skz": true
+      },
+      {
+        "id": "005",
+        "name": "HAN (3RACHA)",
+        "instagram": "realstraykids",
+        "desc": "3RACHA",
+        "bday": "2000-09-14T00:00:00.000Z",
+        "img": "han",
+        "skz": true
+      },
+      {
+        "id": "006",
+        "name": "Felix",
+        "instagram": "yong.lixx",
+        "desc": "DANCERACHA",
+        "bday": "2000-09-15T00:00:00.000Z",
+        "img": "felix",
+        "skz": true
+      },
+      {
+        "id": "007",
+        "name": "Seungmin",
+        "instagram": "miniverse.___",
+        "desc": "VOCALRACHA",
+        "bday": "2000-09-22T00:00:00.000Z",
+        "img": "seungmin",
+        "skz": true
+      },
+      {
+        "id": "008",
+        "name": "I.N",
+        "instagram": "i.2.n.8",
+        "desc": "VOCALRACHA",
+        "bday": "2001-02-08T00:00:00.000Z",
+        "img": "i_n",
+        "skz": true
+      },
+      {
+        "id": "009",
+        "name": "DallasK"
+      },
+      {
+        "id": "010",
+        "name": "VERSACHOI"
+      },
+      {
+        "id": "011",
+        "name": "Trippy"
+      },
+      {
+        "id": "012",
+        "name": "JUN2"
+      },
+      {
+        "id": "013",
+        "name": "Nickko Young"
+      },
+      {
+        "id": "014",
+        "name": "Millionboy"
+      },
+      {
+        "id": "015",
+        "name": "Chae Ganghae"
+      },
+      {
+        "id": "016",
+        "name": "RESTART"
+      },
+      {
+        "id": "017",
+        "name": "Zach Djurich"
+      },
+      {
+        "id": "018",
+        "name": "Tiger JK"
+      },
+      {
+        "id": "019",
+        "name": "Kyle Reynolds"
+      },
+      {
+        "id": "020",
+        "name": "Chris LaRocca"
+      },
+      {
+        "id": "021",
+        "name": "Raphael (Producing Lab.)"
+      },
+      {
+        "id": "022",
+        "name": "Daviid (3SCAPE)"
+      },
+      {
+        "id": "023",
+        "name": "Yosia (3SCAPE)"
+      },
+      {
+        "id": "024",
+        "name": "TAK (NEWTYPE)"
+      },
+      {
+        "id": "025",
+        "name": "1Take (NEWTYPE)"
+      },
+      {
+        "id": "026",
+        "name": "Kimparkchella"
+      },
+      {
+        "id": "027",
+        "name": "Hong Ji Sang"
+      },
+      {
+        "id": "028",
+        "name": "earattack"
+      },
+      {
+        "id": "029",
+        "name": "chAN's"
+      },
+      {
+        "id": "030",
+        "name": "DARM"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --outer-bg-color: #09000c;
+  --bg-color: #0E0711;
+  --secondary-bg-color: #220d28;
+  --header-color: #C6C1EC;
+  --main-color: #faeaff;
+  --title-track-color: #bfe3ff;
+  --text-glow: 0 0 5px #e0eeff; /* text-shadow with text --main-color*/
+  --secondary-color: #9888F0;
+  --tag-color: #2c1034;
+  --border-color: rgb(201 179 239 / 25%);
+  --gray: gray;
+
+  /* Rectangle Glow */
+  --card-glow: 3px solid #251345;
+  --card-bg: rgb(34, 13, 40);
+  --card-glow-color: #c9b3ef; 
+
+  --scroll-thumb: rgb(34, 30, 60);
+
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(73 51 117);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgb(55 30 60);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--outer-bg-color);
+  color: var(--main-color);
+}
+
+section {
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+h1, h2, h3 { 
+  color: var(--header-color);
+  text-shadow: 0 0 0.7rem #4197ff;
+}
+
+main h1 {
+  margin: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+button {
+  border: none; 
+  background-color: inherit;
+  color: inherit;
+}
+
+.App {
+  position: relative;
+  margin: 0 auto;
+  width:100%;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+main { 
+  margin: 50px auto 0 auto;
+  padding: 0.7rem;
+  padding-bottom: 50px;
+  font-size: 0.8rem;
+}
+
+#scroll-up {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 45px;
+  background-color: #0e071100;
+}
+
+#scroll-up svg {
+  color: #faeaff50;
+  font-size: 1.5rem;
+  cursor: pointer;
+} 
+
+#scroll-up svg:hover,
+#scroll-up svg:focus,
+#scroll-up svg:active {
+  color: var(--card-glow-color);
+}
+
+
+
+/* Navigation */
+.Nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--secondary-bg-color);
+  box-shadow: 0 0 10px 1px #000;
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+.navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 2em;
+}
+
+.Nav h1 {
+  font-size: 1.5em;
+}
+
+.Nav a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.Nav a:hover, a:focus { 
+  text-decoration: underline;
+}
+
+#main-menu {
+  width: 1.5rem;
+  height: auto;
+}
+
+#main-menu svg {
+  width: 100%;
+  height: auto;
+}
+
+#main-menu svg:hover,
+#main-menu svg:focus,
+#main-menu svg:active {
+  color: var(--header-color);
+}
+
+nav {
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Home */
+.home-pg p {
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+  text-align: center;
+  line-height: 16pt;
+}
+
+.home-pg h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.home-pg section .description {
+  margin: 0.8em auto;
+  max-width: 600px;
+}
+
+.home-pg .about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.home-pg .text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.home-img {
+  margin-bottom: 1em;
+  width: 100%;
+}
+.home-img img {
+  width: 100%;
+}
+
+.home-pg section:nth-child(even),
+#skz-about {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+.socials svg {
+  margin: 0 0.5em;
+  width: 1.5em;
+  height: auto;
+  color: #000;
+}
+
+.socials svg:hover,
+.socials svg:focus,
+.socials svg:active {
+  color: var(--main-color);
+}
+
+/* Main */
+
+.main-container {
+  border: solid var(--border-color);
+  border-left: none;
+  border-right: none;
+}
+
+/* Columns */
+
+.col-1, .col-2, .col {
+  padding: 0.7rem;
+  border: 1px solid var(--border-color);
+}
+
+/* Card Style */
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px #6c76bd;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  box-shadow: inset 0 0 15px var(--card-glow-color), 0 0 15px 5px var(--card-glow-color);
+}
+
+/* Album and Song List Page*/
+
+.list-ctrl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.list-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  height: 1.5rem;
+}
+
+.search-label {
+  position: absolute;
+  top: -1000px;
+  color: var(--bg-color);
+}
+
+.searchbox {
+  border: 1px solid var(--border-color);
+  padding: 0 0.5rem;
+  height: 1.5rem;
+  background-color: var(--outer-bg-color);
+  color: var(--main-color);
+}
+
+.list-form button {
+  border: 1px solid var(--border-color);
+  width: 1.5rem;
+  background-color: var(--card-bg);
+  color: var(--main-color);
+}
+
+.list-form button:hover,
+.list-form button:focus {
+  background-color: var(--card-glow-color);
+  color: var(--bg-color);
+}
+
+.list-form button:active {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+.list-number {
+  text-align: center;
+}
+
+.albums-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.album-list {
+  width: 45%;
+  margin: 0.7rem 0;
+  padding: 0.5em;
+  text-align: center;
+
+}
+
+.album-list .album-art {
+  height: 41vw;
+}
+
+.col-1 .album-art {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 250px;
+}
+
+.album-art img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+.songs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-list {
+  margin: 0.7rem 0;
+  padding: 0.5em;
+  padding-bottom: 0;
+  display: flow-root;  
+}
+
+.song-summary {
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.song-title,
+.album-title {
+  margin-bottom: 0.3em;
+  color: var(--main-color);
+  text-shadow: var(--text-glow);
+  text-wrap: nowrap;
+}
+
+.song-singer,
+.album-desc {
+  font-size: 0.9em;
+  color: var(--header-color);
+  margin-bottom: 0.3em;
+  text-wrap: nowrap;
+}
+
+.song-album-name, 
+.album-date {
+  font-size: 0.8em;
+  color: var(--secondary-color);
+}
+
+.smallAlbum {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 1em;
+}
+
+.smallAlbum img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.list-style {
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  padding:0.5rem;
+  border: 1px solid var(--card-glow-color);
+  list-style: none;
+}
+
+.list-style:hover,
+.list-style:focus,
+.list-style:active {
+  box-shadow: inset 0 0 10px var(--card-glow-color), 
+  0 0 10px 5px var(--card-glow-color);
+}
+
+.tracklist {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  min-width: fit-content;
+}
+
+.track-num {
+  float: left;
+  height: 3.5rem;
+  width: 2.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  margin-right: 0.5rem;
+  background-color: var(--border-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.track-details {
+  margin-right: 0.5rem;
+}
+
+.title-track {
+  padding: 0.1rem;
+  border-radius: 0.3rem;
+  background-color: var(--title-track-color);
+  color: var(--bg-color);
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Song Credits */
+
+.col-sp .details {
+  margin-bottom: 2rem;
+}
+
+.song-credits p, 
+.song-details p,
+.details p {
+  margin: 0.3rem 0;
+}
+
+.credits-list {
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.3rem 0;
+}
+
+.tags li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 2px;
+  padding: 0.3em;
+  background-color: var(--tag-color);
+  border-radius: 0.7rem;
+}
+
+.tags li:hover,
+.tags li:focus {
+  text-decoration: underline;
+}
+.tags li:active {
+  background-color: var(--border-color);
+}
+
+.skz-container {
+  width: 100%;
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 3px 1px #6c76bd;
+}
+
+.skz-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.skz-card {
+  width: 30%;
+  padding: 0.3rem ;
+}
+
+.profile-image {
+  width: 25vw;
+  height: 25vw;
+  max-width: 250px;
+  margin: auto;
+}
+
+.profile-image img {
+  width: 24vw;
+  max-width: 250px;
+  height: 24vw;
+  max-height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px #6c76bd;
+}
+
+.profile-image img:hover,
+.profile-image img:focus,
+.profile-image img:active {
+  box-shadow: inset 0 0 15px var(--card-glow-color), 
+  0 0 15px 5px var(--card-glow-color);
+}
+
+.skz-card p {
+  text-align: center;
+  margin: 0.3rem 0;
+  text-shadow: var(--text-glow);
+}
+
+.skz-card:hover,
+.skz-card:focus,
+.skz-card:active,
+.skz-profile a:hover,
+.skz-profile a:focus,
+.skz-profile a:active {
+  font-weight: bold;
+}
+
+.skz-profile {
+  width: 100%;
+}
+
+.profile-image-square {
+  width: 85%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.profile-image-square img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 50px;
+  box-shadow: 0 0 3px 3px #6c76bd;
+}
+
+.details {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  padding: 0.3rem;
+}
+
+.skz-profile a {
+  color: var(--header-color);
+}
+
+.prod-name {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.prod-name h2 {
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Filter Menu */
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-container p {
+  margin-bottom: 0.5em;
+  height: 25px;
+  padding-top: 6px;
+  padding-right: 0.7rem;
+  font-size: 13px;
+}
+
+.filter-button {
+  position: relative;
+  width: 150px;
+  height: 25px;
+  padding: 0.3rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  text-align: left;
+  font-size: 13px;
+}
+
+.filter-button span {
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 23px;
+  margin-top: -4px;
+  padding-top: 4px;
+  background-color: var(--card-bg);
+  text-align: center;
+}
+
+.filter-options {
+  position: absolute;
+  margin-right: 0.7rem;
+  width: 150px;
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+}
+
+.filter-options button {
+  width: 100%;
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+  background-color: var(--card-bg);
+  color: var(--main-color);
+}
+
+.filter-options button:hover,
+.filter-options button:focus,
+.filter-button span:hover,
+.filter-button span:focus {
+  background-color: var(--card-glow-color);
+  color: var(--bg-color);
+}
+
+.filter-options button:active,
+.filter-button span:active {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+.checkList {
+  padding: 0.2rem;
+  margin-bottom: 0.2rem;
+  background: var(--scroll-thumb);
+  font-size: 0.85em;
+  text-align: right;
+}
+
+.checkList span{
+  margin-right: 0.3rem;
+}
+
+/* Credit Search */
+.page-cs form {
+  width: 100%;
+}
+
+.page-cs .checkList {
+  text-align: left;
+  line-height: 18pt;
+}
+
+.search-here p {
+  margin: 0.2rem; 
+}
+
+hr.divider {
+  margin: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.search-here .grouped {
+  margin-bottom: 1rem;
+  border: solid 1px var(--gray);
+  width: 100%;
+}
+
+.search-here .grouped p {
+  font-size: 12px;
+  line-height: 15pt;
+}
+
+.search-here .label {
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  background-color: var(--gray);
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.selection-grp {
+  display: flex;
+  flex-flow: column;
+  margin: 0.2rem;
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #09000cb3;
+}
+
+form.credit-search {
+  position: relative;
+  border: 1px solid var(--gray);
+  width: 80%;
+  max-width: 400px;
+  height: 90vh;
+  padding: 10px;
+  background-color: var(--bg-color);
+}
+
+.selected-names .result {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0.2rem;
+  height: 75px;
+  overflow-y: auto;
+}
+
+.selected-names .result p {
+  line-height: 12pt;
+}
+
+.selection-container {
+  border: 1px solid var(--main-color);
+  height: calc(90vh - 165px);
+  overflow: hidden auto;
+}
+
+.selection-container .label {
+  background-color: var(--secondary-color);
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+/* Checkbox and Radio Button*/
+.nameSearch .searchbox {
+  margin: 0.5rem;
+  border: 1px solid var(--main-color);
+  width: calc(100% - 0.5rem - 7px);
+  height: 30px;
+  padding: 0.4rem;
+  font-size: 13px;
+}
+.form-control {
+  margin: 0.4rem;
+  border: 1px solid var(--border-color);
+  width: calc(100% - 0.8rem);
+  padding: 0.4rem;
+  background-color: var(--card-bg);
+  font-size: 13px;
+
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.form-control:hover {
+  background: #583693;
+}
+
+.form-control.radio {
+  margin: 0 0.4rem;
+}
+
+.form-control.radio:first-child {
+  margin-top: 0.4rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--card-bg);
+  margin:0;  
+  font: inherit;
+  color: var(--main-color);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--main-color);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+}
+
+input[type="checkbox"] {
+  border-radius: 0.15em;
+  transform: translateY(-0.07em);
+}
+
+input[type="radio"]::before,
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--main-color);
+  background-color: CanvasText;
+}
+
+input[type="radio"]::before {
+  border-radius: 50%;
+}
+
+input[type="checkbox"]::before {
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="radio"]:checked:before,
+input[type="checkbox"]:checked:before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: max(1px, 0.15em) solid var(--main-color);
+  outline-offset: max(1px, 0.15em);
+}
+
+
+input[type="checkbox"]:disabled {
+  --main-color: var(--gray);
+
+  color: var(--gray);
+  cursor: not-allowed;
+}
+
+.btn-grp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+} 
+
+
+button.btn-ctrl {
+  margin: 0.5rem auto;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.3rem;
+  width: 45%;
+  color: var(--main-color);
+}
+
+button.btn-ctrl:hover,
+button.btn-ctrl:focus {
+  background-color: var(--card-glow-color);
+  color: var(--bg-color);
+}
+
+button.btn-ctrl:active {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+button.btn-green {
+  background-color: #00633e;
+}
+
+button.btn-red {
+  background-color: #630020;
+}
+
+button.full {
+  width: 100%;
+}
+
+button.half {
+  width: 45%;
+}
+
+/* Conditionals */
+.hidden { display:none; }
+.hide { display:none; }
+
+.show {
+  display: block;
+}
+
+.no-wrap {
+  text-wrap: nowrap;
+}
+
+.glow {
+  color: var(--title-track-color);
+  text-shadow: 0 0 5px #7ab6ff;
+  font-weight: bold;
+}
+
+.glowskz {
+  background-color: #301f3f;
+}
+
+.disable {
+  color: var(--gray);
+}
+/* Conditionals */
+
+
+
+
+
+
+/* Mobile Large: 376px to 499px*/
+@media screen and (min-width: 376px) {
+  .Nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navi {
+    width: unset;
+  }
+
+  #main-menu {
+    display: none;
+  }
+
+  nav, .navi{
+    width: fit-content;
+  }
+
+  nav li {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    width: 375px;
+  }
+
+  .album-list .album-art {
+    height: 160px;
+  }
+
+  .profile-image,
+  .profile-image img {
+    width: 92px;
+    height: 92px;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .filter-container p {
+    margin-bottom: unset;
+    height: 25px;
+    padding-top: 6px;
+    padding-right: 0.7rem;
+    font-size: 13px;
+  }
+}
+
+/* Tablet: 500px above*/
+@media screen and (min-width: 500px) {
+  nav li {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    width: 500px;
+  }
+
+  .list-ctrl {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .list-form {
+    margin-bottom: 0;
+  }
+
+  .list-ctrl .list-number {
+    font-size: 0.9rem;
+  }
+
+  .album-list {
+    width: 30%;
+  }
+
+  .album-list .album-art {
+    height: 140px;
+  }
+
+  .credit-page .col-2, 
+  .col-skz {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-skz {
+    width: 400px;
+  }
+
+  .credit-page .col-2 {
+    width: 350px;
+  }
+
+  .profile-image, 
+  .profile-image img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .col-wide {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Tablet: 600px above*/
+@media screen and (min-width: 600px) {
+
+  main {
+    width: 100%;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.7rem 0;
+    height: 90vh;
+    min-height: 500px;
+    max-height: 1000px;
+  }
+
+  .song-page .main-container {
+    height: auto;
+    min-height: max-content;
+  }
+
+  .col-1, .col-2, .col-skz, .col-sp {
+    min-height: 400px;
+    overflow-y: auto;
+  }
+
+  .col-1, .col-2, .col-skz {
+    width: 45%;
+  }
+
+  .col-1, .col-skz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-1, .col {
+    border: none;
+  }
+
+  .col-1 {
+    padding: 0;
+  }
+
+  .col-1 .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    padding: 0.7rem;
+  }
+
+  .col-skz { width: 50% }
+  .credit-page .col-2 { width: 40% }
+
+  .col-sp {
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+  }
+
+  .search-here {
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 500px;
+  }
+
+  .search-here .inner {
+    padding: 10px;
+  }
+
+  .album-list .album-art {
+    height: 28vw;
+  }
+
+  .skz-container {
+    width: 95%;
+    max-width: 400px;
+    margin-bottom: 0;
+  }
+
+  .profile-image, 
+  .profile-image img {
+    width: 10.5vw;
+    max-width: 100px;
+    height: 10.5vw;
+    max-height: 100px;
+  }
+
+  .songs-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .songs-container .song-list {
+    width: 45%;
+  }
+
+  
+  #showResult,
+  .btn-grp {
+    display: none;
+  }
+
+  .pop-up {
+    position: static;
+    width: 100%;
+    height: unset;
+    z-index: 0;
+  }
+
+  form.credit-search {
+    width: 100%;
+    height: 80vh;
+    min-height: 350px;
+  }
+
+  .selection-container {
+    height: calc(80vh - 180px);
+    min-height: 170px;
+  }
+
+  .btn-container {
+    bottom: 10px;
+  }
+
+  .home-pg p {
+    font-size: 1rem;
+  }
+
+  .home-img {
+    max-width: 600px;
+  }
+}
+
+/* Tab-Laptop: 800px above*/
+@media screen and (min-width: 800px) {
+  .album-list {
+    width: 22%;
+  }
+
+  .album-list .album-art {
+    height: 21vw;
+    max-height: 265px;
+  }
+
+  .col-1 .album-art,
+  .col-1 .album-art img {
+    max-width: 300px;
+  }
+
+  .list-ctrl {
+    justify-content: space-around;
+  }
+
+  .list-ctrl .list-number {
+    font-size: 1rem;
+  }
+
+  .home-pg p {
+    font-size: 1rem;
+    line-height: 20pt;
+  }
+
+  .home-img {
+    margin-bottom: 0;
+  }
+
+  .home-pg .about {
+    justify-content: space-around;
+  }
+
+  #skz-about .home-img{ width: 45%; }
+  #skz-about .text-area{ width: 45%; }
+
+  #unit-about {
+    flex-direction: row-reverse;
+  }
+
+  #unit-about .home-img,
+  #unit-about .text-area {
+    width: 45%;
+  }
+}
+
+/* Laptop: 1000px above*/
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
+
+  .skz-container {
+    max-width: 500px;
+  }
+
+  .profile-image, .profile-image img {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  .single-credit {
+    justify-content: center;
+  }
+
+  .single-credit .col-2 {
+    max-width: 500px;
+  }
+
+  .col-sp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    width: 100%;
+    max-width: none;
+  }
+
+  .col {
+    border: 1px solid var(--border-color);
+  }
+
+  .col:first-child {
+    width: 60%;
+    height: fit-content;
+  }
+
+  .col:nth-child(2) {
+    width: 35%;
+  }
+
+  .col-1 .album-art,
+  .col-1 .album-art img {
+    max-width: 400px;
+  }
+
+  .list-form {
+    height: 2rem;
+  }
+
+  .searchbox {
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .list-form button {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .list-form button svg {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .songs-container .song-list {
+    font-size: 12px;
+    width: 30%;
+  } 
+}
+
+/* Laptop: 1440px above*/
+@media screen and (min-width: 1440px) {
+  html { font-size: 20px; }
+
+  .App {
+    max-width: 1440px;
+    box-shadow: 0 0 20px 20px #6c76bd;
+  }
+
+  .main-container {
+    justify-content: center;
+  }
+
+  .page-cs .main-container {
+    justify-content: space-evenly;
+  }
+
+  .album-list {
+    width: 15%;
+  }
+
+  .album-list .album-art {
+    height: 205px;
+  }
+
+  .album-art img {
+    max-width: 500px;
+  }
+
+  .profile-image, .profile-image img {
+    max-width: 100px;
+    max-height: 100px;
+}
+}
